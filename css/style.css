@@ -1,0 +1,17 @@
+.bg {
+  width: 720px;
+  height: auto;
+  margin: 0 auto;
+  background-color: aqua;
+  font-size: 30pt;
+}
+
+.first {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
