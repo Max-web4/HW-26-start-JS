@@ -2,11 +2,12 @@
   width: 720px;
   height: auto;
   margin: 0 auto;
-  background-color: aqua;
+  background-color: rgb(3, 19, 19);
   font-size: 30pt;
 }
 
 .first {
+  color: rgb(4, 192, 206);
   width: auto;
   display: flex;
   flex-direction: column;
@@ -14,4 +15,10 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
+  border: 5px solid rgb(0, 26, 255);
+}
+
+div {
+  color: yellow;
 }
