@@ -10,3 +10,16 @@ if (!((leapValue % 4) || (!(leapValue % 100) && (leapValue % 400)))) {
 return notLeap()
 }
 
+function polindrom() {document.getElementById('polindrom').innerHTML='This is a polindrom'} 
+function notPolindrom() {document.getElementById('polindrom').innerHTML='It`s not a polindrom'} 
+
+function checkPolindrom () {
+let str = document.polindromform.polindromField.value
+let string = str.replace(/\s/g, '').trim()
+    if (string == string.split('').reverse().join('')) {
+        return polindrom()
+    };
+    return notPolindrom();
+  }
+
+  
