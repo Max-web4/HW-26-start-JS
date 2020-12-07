@@ -1,3 +1,5 @@
+
+
 function yourAge() {
     let age = document.ageform.ageField.value; 
     let e = document.getElementById("ages");
@@ -51,3 +53,23 @@ function yourAge() {
             default: Sy.innerHTML = "Numbers from 0 to 9";
         }
         }
+
+        
+       function itsEqual() { document.getElementById('similarNumbers').innerHTML = "There are similar numbers! " };
+
+       function itsNotEqual() { document.getElementById('similarNumbers').innerHTML = "There are not similar numbers! "} ;
+
+       function moreThanTree()  {document.getElementById('similarNumbers').innerHTML = "wow...wow.. polegshe... only 3 numbers "}
+        function yourNumbers() {
+        let value = document.similarityform.numberField.value
+        let array = value.split("").sort();
+        for(let i = 1; i < array.length; i++) {
+    if(array[i] === array[i-1]) {
+        return itsEqual();
+    }
+    else if (value < -999 || value > 999) {return moreThanTree()}
+}  
+return itsNotEqual();
+}
+
+        
