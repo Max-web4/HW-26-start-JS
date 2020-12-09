@@ -22,4 +22,26 @@ let string = str.replace(/\s/g, '').trim()
     return notPolindrom();
   }
 
-  
+function moneyConverter() {
+    let val = document.getElementById("amount").value;
+    let EUR = 0.82;
+    let UAN = 28.07;
+    let AZN = 1.4;
+    let result ;
+
+    switch(true) {
+        case document.getElementById("Eur").checked===true :
+            result = val / EUR ;
+            break;
+        case document.getElementById("Uan").checked===true :
+            result = val / UAN ;
+            break;
+        case document.getElementById("Azn").checked===true :
+            result = val / AZN ;
+            break;
+    }
+    result = `${result.toFixed(2)}`
+    document.getElementById("convert_result").innerHTML = result;
+    return result;
+
+}
