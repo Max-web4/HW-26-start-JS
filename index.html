@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/age.js"></script>
     <script src="./leap.js"></script>
+    <script src="./js/discount.js"></script>
 </head>
 <body>
     <div class="bg">
@@ -49,6 +50,11 @@
                   <option id="AZN">AZN</option>
                 </select>
               </div>
+        </section>
+        <section class="first">
+            <p>Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.</p>
+            <div id="Discount">Summ</div>
+            <form name="discountform" id="disc"><input type="number"  name="discountField" placeholder="Введите сумму" > <input type="button" value="Enter" onclick="yourDiscount()"></form>
         </section>
     </div>
     

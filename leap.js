@@ -30,13 +30,13 @@ function moneyConverter() {
     let result ;
 
     switch(true) {
-        case document.getElementById("Eur").checked===true :
+        case document.getElementById("Eur").checked:
             result = val / EUR ;
             break;
-        case document.getElementById("Uan").checked===true :
+        case document.getElementById("Uan").checked :
             result = val / UAN ;
             break;
-        case document.getElementById("Azn").checked===true :
+        case document.getElementById("Azn").checked :
             result = val / AZN ;
             break;
     }
